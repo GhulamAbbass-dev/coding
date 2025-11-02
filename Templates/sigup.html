@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 100vh; /* Ensures the body takes up full viewport height */
+  margin: 0; /* Remove default body margin */
+       background: linear-gradient(135deg, #1877f2, #42a5f5);
+}
+    .container {
+      background: #fff;
+      padding: 40px 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+    }
+        .logo {
+      font-size: 38px;
+      font-weight: 700;
+      color: #1877f2;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    
+    .input-box label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .input-box input:focus {
+      border-color: #1877f2;
+      outline: none;
+      box-shadow: 0 0 4px rgba(24, 119, 242, 0.4);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #1877f2;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0f5bd3;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="logo">TechServe</div>
+        <div class="title">Sigup Your Account</div>
+<form action="">        <div class="input-box">
+            <label for="">Email</label>
+            <input type="text" name="" id="Email" required>
+        </div>
+          <div class="input-box">
+            <label for="">User-Name</label>
+            <input type="text" name="" id="">
+        </div>
+
+         <div class="input-box">
+            <label for="">Password</label>
+            <input type="text" name="" id="Password" required>
+        </div>
+        <button class="btn sigup">Sig-up</button>
+        </form>
+
+         <div class="links" style="margin-top: 25px;">
+      Don’t have an account? <a href="./index.html">Login</a>
+    </div>
+    </div>
+<script src="./sigup.js"></script>
+</body>
+</html>

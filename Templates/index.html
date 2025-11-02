@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Login</title>
+  <style>
+    /* 🌈 General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1877f2, #42a5f5);
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 38px;
+      font-weight: 700;
+      color: #1877f2;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-box label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .input-box input:focus {
+      border-color: #1877f2;
+      outline: none;
+      box-shadow: 0 0 4px rgba(24, 119, 242, 0.4);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #1877f2;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0f5bd3;
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .links a {
+      color: #1877f2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      margin: 25px 0;
+      position: relative;
+    }
+
+    .divider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #ccc;
+      transform: translateY(-50%);
+    }
+
+    .divider span {
+      position: relative;
+      background: #fff;
+      padding: 0 10px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social-btn {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .google {
+      background: #db4437;
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .social-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">TechServe</div>
+    <div class="title">Login to your account</div>
+
+    <form action="">
+
+    <div class="input-box">
+      <label>Email</label>
+      <input type="email" class="email"  placeholder="Enter your email" required >
+    </div>
+
+    <div class="input-box">
+      <label>Password</label>
+      <input type="password"  placeholder="Enter your password" required class="pass" >
+    </div>
+
+    <button class="btn login">Login</button>
+</form>
+    <div class="links">
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <div class="divider"><span>or</span></div>
+
+    <div class="social-login">
+      <button class="social-btn google">Login with Google</button>
+      <button class="social-btn facebook">Login with Facebook</button>
+    </div>
+
+    <div class="links" style="margin-top: 25px;">
+      Don’t have an account? <a href="./sigup.html">Sign up</a>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
